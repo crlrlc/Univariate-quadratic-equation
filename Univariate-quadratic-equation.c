@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h>//因为sqrt属于math.h的工具，而stdio.h不含这个，所以要添加
 int main(void) 
 {
 	//计算一元二次方程
@@ -13,7 +13,7 @@ int main(void)
 
 	if (delta > 0) 
 	{
-		x1 = ((-b) + sqrt(delta)) / (2 * a);//sqrt 搞成squrt要注意
+		x1 = ((-b) + sqrt(delta)) / (2 * a);//sqrt 容易搞成squrt，要注意
 		x2 = ((-b) - sqrt(delta)) / (2 * a);
 		printf("有两个解,x1 = %f,   x2 = %f\n", x1,  x2);
 
